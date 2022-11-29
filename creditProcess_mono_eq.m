@@ -14,7 +14,7 @@ sensitive = data(:,1);
 normalized = (sensitive-1).*(sensitive-2);
 
 % Extract the sensitive attribute from the dataset
-data = data(:,2:end-1);
+data = data(:,[3,5:end-1]);
 
 % Data for low educated populattion
 data_lowEd = data(find(normalized),:);
